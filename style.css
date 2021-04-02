@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#results {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 600px;
+}
+
+#spell-list {
+  position: absolute;
+  overflow: scroll;
+  height: 100vh;
+  width: 250px;
+  margin-left: 20px;
+  left: 10px;
+  top: 70px;
+}
+
+#spell-list p {
+  margin-top: 40px;
+}
+
+#spell-list p:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+form {
+  background-color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  top: 20px;
+  z-index: 1;
+  left: 10px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding-left: 350px;
+}
+
+#spell-list::-webkit-scrollbar {
+  display: none;
+}
